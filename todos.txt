@@ -1,0 +1,17 @@
+// Fri, Feb 28, 2025  6:00:35 PM
+{
+file: ./404-page.html
+file: ./bibliography.html
+file: ./index.html
+file: ./main.bak.js
+file: ./main.js
+6ec107c7 (Zachary Wartell 2025-02-26 08:33:07 -0500   8) \todo {status:in-progress,priority:high} find all the bugs
+6ec107c7 (Zachary Wartell 2025-02-26 08:33:07 -0500   9) \todo {status:in-progress,priority:low} [UI] add set of preset frequency pairs
+6ec107c7 (Zachary Wartell 2025-02-26 08:33:07 -0500  10) \todo {status:not-strat,priority:medium} [UI] more work on improving mobile version of UI ("@media (pointer: coarse)"", etc)
+acd677a1 (Zachary Wartell 2025-02-22 09:14:44 -0500  11) \todo {status:not-started,priority:low} [UI] add left right balance control (primarily testing and verification purposes)
+79c5392a (Zachary Wartell 2025-02-21 12:28:33 -0500  12) \todo {status:not-started,priority:low} [GUI] refactor to play/stop checkbox into three play,pause,stop buttons
+acd677a1 (Zachary Wartell 2025-02-22 09:14:44 -0500  13) \todo {status:completed,priority:low} rewrite in separate typescript .ts file
+6ec107c7 (Zachary Wartell 2025-02-26 08:33:07 -0500  79) /* hack solution ; \todo should revisit the need for this hack*/
+4c44edd1 (Zachary Wartell 2025-02-26 11:16:45 -0500 299)          \todo implement pause button functionality including pausing timer
+file: ./service-worker.js
+}

@@ -3,12 +3,29 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>dev journal - zax mindscape</title>
+    
+    <link rel="stylesheet" href="./lib/zxw-mvc/style.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "ZxW_MVC": "./lib/zxw-mvc/ZxW_MVC.js",
+          "ZxW_TabContainer": "./lib/zxw-mvc/ZxW_TabContainer.js",
+          "ZxW_Toolbar": "./lib/zxw-mvc/ZxW_Toolbar.js",
+          "ZxW_GUI": "./lib/zxw-mvc/ZxW_GUI.js"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
     <script type="module">
         import * as zjwTemplate from "./lib/zjw-templates/main.js";
         zjwTemplate.main("./lib/zjw-templates");
         window.insertTemplate = zjwTemplate.insertTemplate;        
         console.log("module: main.js");
+
+        import * as ZxW_Toolbar from "ZxW_Toolbar";
+        const toolbar = new ZxW_Toolbar.Toolbar();
+
     </script>  
     
     <style>
@@ -22,7 +39,7 @@
   </style>
   </head>
   <body>
-    <section>
+    <section id="UserDocument">
       <h1 class="Title">zax-mindscape dev journal</h1>
       <h2>Author: Zachary Wartell</h2>
       <h3 class="Title">Copyright Zachary Wartell. All Rights Reserved, 20255</h3>

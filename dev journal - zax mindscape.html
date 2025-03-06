@@ -3,6 +3,14 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>dev journal - zax mindscape</title>
+    <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
+    <script type="module">
+        import * as zjwTemplate from "./lib/zjw-templates/main.js";
+        zjwTemplate.main("./lib/zjw-templates");
+        window.insertTemplate = zjwTemplate.insertTemplate;        
+        console.log("module: main.js");
+    </script>  
+    
     <style>
     details.InlineCitation {
       display: inline;
@@ -18,7 +26,7 @@
       <h1 class="Title">zax-mindscape dev journal</h1>
       <h2>Author: Zachary Wartell</h2>
       <h3 class="Title">Copyright Zachary Wartell. All Rights Reserved, 20255</h3>
-      <section>
+      <section id="TestingSection" contenteditable>
         <h1>Dev Blog</h1>
         <section>
           <h2> </h2>
@@ -67,7 +75,8 @@
                 </ol>
                 <li>Server Requirements:</li>
                 <ol>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#https_localhost_or_loopback_are_required"
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#https_localhost_or_loopback_are_required"
+
                       target="_blank">https_localhost_or_loopback_are_required</a></li>
                 </ol>
               </ol>

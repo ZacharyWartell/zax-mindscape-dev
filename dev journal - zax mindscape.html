@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>dev journal - zax mindscape</title>
-    
-    <link rel="stylesheet" href="./lib/zxw-mvc/style.css">
-    <script type="importmap">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>dev journal - zax mindscape</title>
+
+  <link rel="stylesheet" href="./lib/zxw-mvc/style.css">
+  <script type="importmap">
       {
         "imports": {
           "ZxW_MVC": "./lib/zxw-mvc/ZxW_MVC.js",
@@ -16,23 +17,25 @@
       }
     </script>
 
-    <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
-    <script type="module">
-        import * as zjwTemplate from "./lib/zjw-templates/main.js";
-        zjwTemplate.main("./lib/zjw-templates");
-        window.insertTemplate = zjwTemplate.insertTemplate;        
-        console.log("module: main.js");
+  <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
+  <script type="module">
+    import * as zjwTemplate from "./lib/zjw-templates/main.js";
+    zjwTemplate.main("./lib/zjw-templates");
+    window.insertTemplate = zjwTemplate.insertTemplate;
+    console.log("module: main.js");
 
-        import * as ZxW_Toolbar from "ZxW_Toolbar";
-        const toolbar = new ZxW_Toolbar.Toolbar();
+    import * as ZxW_Toolbar from "ZxW_Toolbar";
+    const toolbar = new ZxW_Toolbar.Toolbar();
 
-    </script>  
-    
-    <style>
-    h1.Title,h2.Title,h3.Title
-    {        
-        text-align: center;
+  </script>
+
+  <style>
+    h1.Title,
+    h2.Title,
+    h3.Title {
+      text-align: center;
     }
+
     details.InlineCitation {
       display: inline;
     }
@@ -41,42 +44,66 @@
       display: block;
     }
   </style>
-  </head>
-  <body>    
-    <section id="UserDocument">      
+</head>
+
+<body>
+  <section id="UserDocument">
     <h1 class="Title">zax-mindscape dev journal</h1>
     <h2 class="Title">Author: Zachary Wartell</h2>
     <h3 class="Title">Copyright Zachary Wartell. All Rights Reserved, 2025</h3>
+    <div class="RevisionAutoUpdate"></div>
     <section id="OpenSaveDivision" contenteditable>
-      <section id="TestingSection" >
+      <section id="TestingSection">
         <h1>Dev Blog</h1>
         <section>
-          <h2> </h2>
+          <h2>3/6/2025</h2>
+          <p>asdfasdfaasdfasdf</p>
+          <p><br></p>
+          <section>
+            <h2> </h2>
+          </section>
+    
+          <div class="Question" data-zjw-ai="{status:raw}">
+            Why do my installed PWA apps stop functioning if the server is not reachable.&nbsp; &nbsp;This occurs when I'm running a local localhost server serving
+            the PWA (npx http-server) and on my GC VM (Apache)?&nbsp;&nbsp;<br><br><br><br><br><br></div>
+    
+          <div class="Reference" data-zjw-ai="{status:raw}">https://www.experts-exchange.com/questions/29229081/Progressive-Web-App-using-Apache-and-PHP.html
+          </div>
+          <div class="Reference" data-zjw-ai="{status:raw}">https://dev.to/iaadidev/deploying-an-application-using-apache-as-a-web-server-1f9j</div>
+          <div class="Reference" data-zjw-ai="{status:raw}">https://httpd.apache.org/docs/2.4/caching.html&nbsp;</div>
+          <div class="Reference" data-zjw-ai="{status:raw}">https://loadforge.com/guides/leveraging-caching-to-accelerate-apache-server-response-times</div>  
         </section>
       </section>
       <h1>PWA Notes</h1>
-      <figure> <img src="./images/pwa-environment.svg" alt="Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps">
+      <figure> <img src="./images/pwa-environment.svg"
+          alt="Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps">
         <figcaption> Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps.
           <details class="InlineCitation">
             <summary>(from [MDN2025])</summary>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app/pwa-environment.svg">[link</a>,Accessed
-            2/21/2025.] </details>
-        </figcaption> </figure>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app/pwa-environment.svg">[link</a>,Accessed
+            2/21/2025.]
+          </details>
+        </figcaption>
+      </figure>
       <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing#installing_and_uninstalling_pwas" target="_blank">Install
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing#installing_and_uninstalling_pwas"
+            target="_blank">Install
             and Uninstalling</a>[MDN2025] </li>
         <ul>
           <li>
             <blockquote> The user interface for installing PWAs differs by device and OS combination. </blockquote>
           </li>
         </ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable" target="_blank">Making_PWAs_installable</a>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable"
+            target="_blank">Making_PWAs_installable</a>
           <ul>
             <li>Requirements:
               <ol>
                 <li>Added to your webpage. </li>
                 <ol>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest" target="_blank">the_web_app_manifest</a></li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#the_web_app_manifest"
+                      target="_blank">the_web_app_manifest</a></li>
                   <li>service worker - "is a specific type of <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API" target="_blank">web
                       worker</a> that's used to implement PWAs."
                     <blockquote> The main code creates the worker, passing in a URL to the worker's script. The worker and the main code can't directly access
@@ -84,21 +111,23 @@
                       <details class="InlineCitation">
                         <summary>(from [MDN2025])</summary>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation">[link</a>,Accessed
-                        2/21/2025.] </details>
+                        2/21/2025.]
+                      </details>
                     </blockquote>
                     <blockquote> a PWA always has a high level architecture split between: The main app, with the HTML, CSS, and the part of the JavaScript that
                       implements the app's UI (by handling user events, for example) The service worker, which handles offline and background tasks
                       <details class="InlineCitation" open="">
                         <summary>(from [MDN2025])</summary>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation">[link</a>,Accessed
-                        2/21/2025.] </details>
+                        2/21/2025.]
+                      </details>
                     </blockquote>
                   </li>
                 </ol>
                 <li>Server Requirements:</li>
                 <ol>
-                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#https_localhost_or_loopback_are_required"
-
+                  <li><a
+                      href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable#https_localhost_or_loopback_are_required"
                       target="_blank">https_localhost_or_loopback_are_required</a></li>
                 </ol>
               </ol>
@@ -113,34 +142,29 @@
             </li>
             <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
           </ul>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a></li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
+        </li>
         <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
         <ul>
         </ul>
         <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
       </ul>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a></section>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
+    </section>
     <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
     <section><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
       <ol>
         <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt"> </a>
         <li>
-          <div class="Reference"><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt</a></div>
+          <div class="Reference"><a
+              href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/How_to/Trigger_install_prompt</a>
+          </div>
         </li>
         <li>
           <div style="color: #0000ee;" div="Reference">https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries</div>
         </li>
       </ol>
     </section>
-    </section>
-          <template id="FigureImageTemplate">
-      <figure> <img src="./images/pwa-environment.svg" alt="Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps">
-        <figcaption> Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps.
-          <details class="InlineCitation">
-            <summary>(from [MDN2025])</summary>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app/pwa-environment.svg">[link</a>,Accessed
-            2/21/2025.] </details>
-        </figcaption> </figure>
-    </template>
-  </body>
+  </section>
+</body>
 </html>

@@ -17,14 +17,17 @@
     </script>
 
   <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
+  <link rel="stylesheet" href="./lib/zjw-templates/headings.css">  
   <script type="module">
     import * as zjwTemplate from "./lib/zjw-templates/main.js";
-    zjwTemplate.main("./lib/zjw-templates");
+    zjwTemplate.main("./lib/zjw-templates",{enableToolbar : true});
     window.insertTemplate = zjwTemplate.insertTemplate;
     console.log("module: main.js");
 
+    /*
     import * as ZxW_Toolbar from "ZxW_Toolbar";
     const toolbar = new ZxW_Toolbar.Toolbar();
+    */
   </script>
 
   <style>
@@ -52,9 +55,9 @@
     <div class="RevisionAutoUpdate"></div>
     <section id="OpenSaveDivision" contenteditable>
       <section id="TestingSection">
-        <h1>Dev Blog</h1>
+        <h1 class="Section">Dev Blog</h1>
         <section>
-          <h2>3/6/2025</h2>
+          <h2 class="Section">3/6/2025</h2>
           <div class="Question" data-zjw-ai="{status:raw}">
             <span>Why do my installed PWA apps stop functioning if the server is not reachable.&nbsp; &nbsp;This occurs when I'm running a local localhost server
               serving  the PWA (npx http-server) and on my GC VM (Apache)?</span>
@@ -75,14 +78,14 @@
         </section>
       </section>
       <section>
-        <h1>Flexbox Notes</h1>
+        <h1 class="Section">Flexbox Notes</h1>
         <figure>
            <img height="500px" src="images/flexbox.svg">
            <figcaption>Flexbox notes</figcaption>
         </figure>
       </section>
       <section>
-        <h1>PWA Notes</h1>
+        <h1 class="Section">PWA Notes</h1>
         <figure> <img src="./images/pwa-environment.svg"
             alt="Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps">
           <figcaption> Diagram comparing the runtime environment for traditional websites, PWAs, and platform-specific apps.

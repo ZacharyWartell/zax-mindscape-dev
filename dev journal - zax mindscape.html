@@ -5,6 +5,10 @@
   <title>dev journal - zax mindscape</title>
 
   <link rel="stylesheet" href="./lib/zxw-mvc/style.css">
+
+  <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
+  <link rel="stylesheet" href="./lib/zjw-templates/headings.css">  
+
   <script type="importmap">
       {
         "imports": {
@@ -15,20 +19,8 @@
         }
       }
     </script>
+    <script type="module" src="./main.js"></script>
 
-  <link rel="stylesheet" href="./lib/zjw-templates/styles.css">
-  <link rel="stylesheet" href="./lib/zjw-templates/headings.css">  
-  <script type="module">
-    import * as zjwTemplate from "./lib/zjw-templates/main.js";
-    zjwTemplate.main("./lib/zjw-templates",{enableToolbar : true});
-    window.insertTemplate = zjwTemplate.insertTemplate;
-    console.log("module: main.js");
-
-    /*
-    import * as ZxW_Toolbar from "ZxW_Toolbar";
-    const toolbar = new ZxW_Toolbar.Toolbar();
-    */
-  </script>
 
   <style>
     h1.Title,
@@ -46,14 +38,13 @@
     }
   </style>
 </head>
-
 <body>
   <section id="UserDocument">
     <h1 class="Title">zax-mindscape dev journal</h1>
     <h2 class="Title">Author: Zachary Wartell</h2>
     <h3 class="Title">Copyright Zachary Wartell. All Rights Reserved, 2025</h3>
     <div class="RevisionAutoUpdate"></div>
-    <section id="OpenSaveDivision" contenteditable>
+    <section id="OpenSaveDivision" class="SaveLoadContent" contenteditable>
       <section id="TestingSection">
         <h1 class="Section">Dev Blog</h1>
         <section>

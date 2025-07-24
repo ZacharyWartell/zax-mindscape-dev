@@ -1,0 +1,98 @@
+div.Todo
+{
+    border: 1px dashed darkgreen;
+}
+
+div.Todo::before
+{
+    content: "[" attr(id) "]";
+    border: 1px dashed darkgreen;
+    background-color: bisque;
+}
+
+div.Todo p
+{
+    font-size: medium;
+}
+
+/*
+\todo div.Todo::before:hover , idea but this simple trick doesn't work
+div.Todo::before:hover
+{
+    cursor: help;
+}
+*/
+
+div.Idea
+{
+    border: 1px dashed darkgreen;
+}
+
+div.Idea::before
+{
+    content: "[" attr(id) "]";
+    border: 1px dashed darkgreen;
+    background-color: bisque;
+}
+
+div.Idea p
+{
+    font-size: medium;
+}
+
+
+/**
+
+data-status
+    - {status: raw}   // no automated process yet applied
+
+*/
+div.Reference
+{
+    border: 1px dashed darkgreen;
+}
+
+/**
+*/
+div.Question
+{
+    display: block;
+    border: 1px dashed black;
+}
+
+div.Question::before
+{
+    content:"[?] ";
+    font-weight: bold;
+}
+
+/**
+[wip]
+*/
+div.Question_HIDE:hover::before
+{
+    content: attr(class) ": " attr(data-zjw-ai); /* lc("HOVER AFTER" + attr(data-zjw-ai)); */
+    font-weight: bold;
+    background-color:  yellow;
+    border: 2px solid;
+    position: absolute;
+    top: -50;
+}
+
+div.Question > span:nth-child(1)
+{
+    background-color: lightcyan;
+    text-decoration: wavy;
+}
+div.Question p
+{
+    font-size: medium;
+}
+
+dialog#InfoDialog[open]
+{
+    display: none;    
+    align-content: center;
+    display: flex;
+    flex-direction: column;    
+}

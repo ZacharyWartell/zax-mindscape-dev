@@ -1,0 +1,55 @@
+body {
+    counter-reset: h1-Section h1-Appendix;
+}
+
+h1.Section {
+    counter-reset: h2-Section;
+    font-size: larger;
+}
+
+h2.Section {
+    counter-reset: h3-Section;
+    font-size: medium;
+}
+
+h3.Section {
+    counter-reset: h4-Section;
+}
+
+h4.Section {
+    counter-reset: h5-Section;
+}
+
+h5.Section {
+    counter-reset: h6-Section;
+}
+
+h1.Section:before {
+    counter-increment: h1-Section;
+    content: counter(h1-Section) ". "
+}
+
+h2.Section:before {
+    counter-increment: h2-Section;
+    content: counter(h1-Section) "." counter(h2-Section) ". "
+}
+
+h3.Section:before {
+    counter-increment: h3-Section;
+    content: counter(h1-Section) "." counter(h2-Section) "." counter(h3-Section) ". "
+}
+
+h4.Section:before {
+    counter-increment: h4-Section;
+    content: counter(h1-Section) "." counter(h2-Section) "." counter(h4-Section) "." counter(h4-Section) ". "
+}
+
+h5.Section:before {
+    counter-increment: h5-Section;
+    content: counter(h1-Section) "." counter(h2-Section) "." counter(h4-Section) "." counter(h4-Section) "." counter(h5-Section) ". "
+}
+
+h1.nocount:before, h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before {
+    content: "";
+    counter-increment: none
+}

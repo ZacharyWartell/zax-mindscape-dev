@@ -36,7 +36,7 @@ zjwt.main("./lib/zjw-templates",{enableToolbar : false});
  */
 let toolBar: ZxW_TB.Toolbar = null;
 const app = new App();
-toolBar = new ZxW_TB.Toolbar(null, app, null);
+let toolbar = new ZxW_TB.Toolbar(null,app,null,{includedMenubarItems:["help"],useUserGuideFile: true});
 
 
 

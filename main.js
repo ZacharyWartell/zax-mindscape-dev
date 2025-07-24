@@ -27,6 +27,6 @@ zjwt.main("./lib/zjw-templates", { enableToolbar: false });
  */
 let toolBar = null;
 const app = new App();
-toolBar = new ZxW_TB.Toolbar(null, app, null);
+let toolbar = new ZxW_TB.Toolbar(null, app, null, { includedMenubarItems: ["help"], useUserGuideFile: true });
 console.log("module: main.js");
 //# sourceMappingURL=main.js.map

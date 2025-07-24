@@ -4,16 +4,16 @@ import * as ZxW_GUI from "ZxW_GUI";
 
 import * as zjwt from "./lib/zjw-templates/main.js";
 
-class App extends ZxW_GUI.Application 
+class App extends ZxW_GUI.DefaultApplication
 {
     constructor() 
     {
         super();
     }
-    private fileHandle_: FileSystemHandle | null = null;
+    // private fileHandle_: FileSystemHandle | null = null;
 
-    get fileHandle() { return this.fileHandle_; }
-    set fileHandle(fh: any) { this.fileHandle_ = fh; }
+    // get fileHandle() { return this.fileHandle_; }
+    // set fileHandle(fh: any) { this.fileHandle_ = fh; }
 
     postUserDocumentLoadCallback() {
         //onLoad();

@@ -2,13 +2,13 @@ import * as ZxW_TC from "ZxW_TabContainer";
 import * as ZxW_TB from "ZxW_Toolbar";
 import * as ZxW_GUI from "ZxW_GUI";
 import * as zjwt from "./lib/zjw-templates/main.js";
-class App extends ZxW_GUI.Application {
+class App extends ZxW_GUI.DefaultApplication {
     constructor() {
         super();
-        this.fileHandle_ = null;
     }
-    get fileHandle() { return this.fileHandle_; }
-    set fileHandle(fh) { this.fileHandle_ = fh; }
+    // private fileHandle_: FileSystemHandle | null = null;
+    // get fileHandle() { return this.fileHandle_; }
+    // set fileHandle(fh: any) { this.fileHandle_ = fh; }
     postUserDocumentLoadCallback() {
         //onLoad();
         zjwt.onLoad();

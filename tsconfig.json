@@ -4,16 +4,16 @@
 
     "target": "es2020",
     "module": "es2020",
-
+    "skipLibCheck": true,
     // ZJW: I haven't upgrade all the code to the newest TS standard....
     //"strict": true,                                      /* Enable all strict type-checking options. */
     "sourceMap": true,
     "paths":{
-        "ZxW_MVC": ["./lib/zxw-mvc/ZxW_MVC"],
-        "ZxW_TabContainer": ["./lib/zxw-mvc/ZxW_TabContainer"],
-        "ZxW_Toolbar": ["./lib/zxw-mvc/ZxW_Toolbar"],
-        "ZxW_GUI": ["./lib/zxw-mvc/ZxW_GUI"],
-        "zjw-templates": ["./lib/zjw-templates/main"]
+        "ZxW_MVC": ["./git-modules/zxw-mvc/ZxW_MVC"],
+        "ZxW_TabContainer": ["./git-modules/zxw-mvc/ZxW_TabContainer"],
+        "ZxW_Toolbar": ["./git-modules/zxw-mvc/ZxW_Toolbar"],
+        "ZxW_GUI": ["./git-modules/zxw-mvc/ZxW_GUI"],
+        "zjw-templates": ["./git-modules/zjw-templates/main"]
       }
   },
   "exclude": [

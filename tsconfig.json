@@ -13,6 +13,7 @@
         "ZxW_TabContainer": ["./git-modules/zxw-mvc/ZxW_TabContainer"],
         "ZxW_Annotation": ["./git-modules/zxw-mvc/ZxW_Annotation"],
         "ZxW_Toolbar": ["./git-modules/zxw-mvc/ZxW_Toolbar"],
+        "ZxW_TextEditor": ["./git-modules/zxw-mvc/ZxW_TextEditor"],
         "ZxW_GUI": ["./git-modules/zxw-mvc/ZxW_GUI"],
         "zjw-templates": ["./git-modules/zjw-templates/main"]
       }

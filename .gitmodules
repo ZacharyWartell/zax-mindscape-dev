@@ -1,0 +1,6 @@
+[submodule "git-modules/zjw-templates"]
+	path = git-modules/zjw-templates
+	url = ../zjw-templates.git
+[submodule "git-modules/zxw-mvc"]
+	path = git-modules/zxw-mvc
+	url = ../zxw-mvc.git
